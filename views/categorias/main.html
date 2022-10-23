@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/categoria.css">
+    <!-- Fuente Google Apis -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Iconos Fonts Awesome-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <!-- Barra superior del proyecto -->
+<header>
+    <h2>Nombre del proyecto</h2>
+    <div class="buscador">
+        <input type="search" placeholder="Buscar">
+        <i class="bi bi-search input-icon"></i>
+    </div>
+    <a href="views/carrito/main.html"><i class="bi bi-cart3"></i></a>
+</header>
+    <!-- Barra de navegación -->
+<nav class="barra-navegacion">
+    <ul>
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><a class="active">Categorías</a></li>
+        <li><a href="views/lo-nuevo/main.html">Lo Nuevo</a></li>
+        <li><a href="views/distribuidores/main.html">Distribuidores</a></li>
+        <li><a href="views/contacto/main.html">Contáctanos</a></li>
+    </ul> 
+</nav>
+    <!-- Contenido Principal -->
+<main class="contenedor">
+    <div class="contenido">
+        <section id="navegador-vertical">
+            <nav>
+                <ul>
+                <li class="link-active"><a href="" class="link"><i class="fa-duotone fa-guitars"></i>
+                    <span>Guitarras</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-duotone fa-guitar"></i>
+                    <span>Ukeleles</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-duotone fa-guitar-electric"></i>
+                    <span>Bajos</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-duotone fa-amp-guitar"></i>
+                    <span>Amplificadores</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-duotone fa-drum"></i>
+                    <span>Percusión</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-regular fa-speaker"></i>
+                    <span>Pedaleras</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-regular fa-volume-off"></i>
+                    <span>Parlantes</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-solid fa-microphone-lines"></i>
+                    <span>Micrófonos</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-duotone fa-saxophone"></i>
+                    <span>Saxofones</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-regular fa-disc-drive"></i>
+                    <span>DJ's</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-regular fa-tv-music"></i>
+                    <span>Accesorios</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-duotone fa-violin"></i>
+                    <span>Violines</span></a>
+                </li>
+                <li><a href="" class="link"><i class="fa-solid fa-piano-keyboard"></i>
+                    <span>Teclados</span></a>
+                </li>
+                </ul>
+            </nav>
+        </section>
+        <article id="elementos">
+            <div class="producto">
+                <div class="imagen">
+                  <img src="../../img/productos/image1.jpg" alt="Imagen Producto" width="600" height="400">
+                </div>
+                <div class="desc">
+                    <div class="compartir-producto">
+                        <p>Compartir en: </p>
+                        <a href=""><i class="bi bi-facebook fb-icon"></i></a>
+                        <a href=""><i class="bi bi-whatsapp whts-icon"></i></a>
+                        
+                    </div>
+                    <div class="descripcion-producto">
+                        <p class="producto-nombre"><b>Nombre del Producto</b></p>
+                        <p class="producto-desc">Marca: marca del producto</p>
+                        <p class="producto-desc">Modelo: modelo del producto</p>
+                    </div>
+                    <div class="precio-producto">
+                        <p class="producto-nombre"><b>S/3,230.00</b></p>
+                        <div class="puntuacion">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                    <div class="cantidad-producto">
+                        <div class="cantidad">
+                            <label for="cantidad">Cantidad</label>
+                            <input type="number" name="cantidad" min="1" value="1">
+                        </div>
+                        <button class="btn-carrito">
+                            <i class="bi bi-cart-plus"></i>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+              
+        </article>
+    </div>
+</main>
+    <!-- Footer -->
+<footer>
+  <div>
+    <ul class="lista-numeros">
+        <li>Atención al Cliente</li>
+        <li>+51 999 999 999</li>
+        <li>Compras por Teléfono</li>
+        <li>+51 999 999 888</li>
+        <li>Servicio Técnico</li>
+        <li>+51 999 999 777</li>
+    </ul>
+  </div>
+  <div>
+    <h5>Integrantes del grupo:</h5>
+    <ul class="lista-integrantes">
+        <li>Sihomara Sandy Ochoa Cisneros</li>
+        <li>Condori Lima Mijayl Ramon</li>
+        <li>Llica García Jesusamado</li>
+        <li>Sandoval Litano Erick Arom</li>
+        <li>Villalta Delgado Victor Agustín</li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-iconos">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-youtube"></i>
+    </div>
+    <p>2022 MizterFrek - Todos los derechos Reservados</p>
+  </div>
+</footer>
+</body>
+</html>

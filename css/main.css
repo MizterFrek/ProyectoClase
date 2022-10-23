@@ -1,0 +1,151 @@
+@import url('root.css');
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */ 
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*Globales*/
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 50px auto; 
+    min-height: calc(100vh - 250px); 
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuente);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+} 
+/* HEADER*/
+header {
+    background-color: var(--color2);
+    padding: 10px 50px;
+    height: 80px;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+.buscador {
+    position: relative;
+    width: 271px;
+  }
+  
+.buscador input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+    border-radius: 10px;
+}
+    
+.buscador i {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    font-size:20px;
+    margin-right: 10px;
+}
+header a{
+    font-size:48px;
+    color: var(--blanco);
+}
+header a:hover{
+    color: var(--color4);
+}
+/* BARRA DE NAVEGACION */
+.barra-navegacion ul {
+    list-style-type: none;
+    margin: 0 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color1);
+}
+.barra-navegacion li {
+    float: left;
+}
+.barra-navegacion li a {
+    display: block;
+    color: var(--blanco);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.barra-navegacion li a:hover {
+    background-color: #111;
+    transition: 0.4s;
+}
+.active {
+    background-color: var(--color3);
+}
+/* FOOTER */
+footer{
+    margin-top: 25px;
+    background-color: var(--color3);
+    height: 250px;
+    color: var(--blanco);
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 50px;
+}
+footer div ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+footer div h5{
+    text-transform: uppercase;
+}
+footer div .footer-iconos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 50px;
+}
+.lista-numeros li:nth-child(even){
+    text-align: end;
+}
+.lista-integrantes{
+    list-style:inside;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
