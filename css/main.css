@@ -84,7 +84,7 @@ header a{
     font-size:48px;
     color: var(--blanco);
 }
-header a:hover{
+header .enlace-carrito:hover{
     color: var(--color4);
 }
 /* BARRA DE NAVEGACION */
@@ -131,11 +131,15 @@ footer div ul{
 footer div h5{
     text-transform: uppercase;
 }
-footer div .footer-iconos{
+.footer-iconos{
     display: flex;
     justify-content: center;
     gap: 30px;
     font-size: 50px;
+}
+.footer-iconos a{
+    text-decoration: none;
+    color: var(--blanco);
 }
 .lista-numeros li:nth-child(even){
     text-align: end;
