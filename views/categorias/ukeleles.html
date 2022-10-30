@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/categoria.css">
+    <!-- Fuente Google Apis -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Iconos Fonts Awesome-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <!-- Barra superior del proyecto -->
+<header>
+    <a href="../../index.html"><h2>DOREMInstrumentos</h2></a>
+    <div class="buscador">
+        <input type="search" placeholder="Buscar">
+        <i class="bi bi-search input-icon"></i>
+    </div>
+    <a href="../carrito/main.html" class="enlace-carrito"><i class="bi bi-cart3"></i></a>
+</header>
+    <!-- Barra de navegación -->
+<nav class="barra-navegacion">
+    <ul>
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><a class="nav-active">Categorías</a></li>
+        <li><a href="../servicios/main.html">Servicios</a></li>
+        <li><a href="../distribuidores/main.html">Distribuidores</a></li>
+        <li><a href="../contacto/main.html">Contáctanos</a></li>
+    </ul> 
+</nav>
+    <!-- Contenido Principal -->
+<main class="contenedor">
+    <div class="contenido">
+        <section id="navegador-vertical">
+            <nav>
+                <ul>
+                <li><a href="guitarras.html" class="link"><i class="fa-duotone fa-guitars"></i>
+                    <span>Guitarras</span></a>
+                </li>
+                <li class="link-active"><a href="ukeleles.html" class="link"><i class="fa-duotone fa-guitar"></i>
+                    <span>Ukeleles</span></a>
+                </li>
+                <li><a href="bajos.html" class="link"><i class="fa-duotone fa-guitar-electric"></i>
+                    <span>Bajos</span></a>
+                </li>
+                <li><a href="amplificadores.html" class="link"><i class="fa-duotone fa-amp-guitar"></i>
+                    <span>Amplificadores</span></a>
+                </li>
+                <li><a href="percusion.html" class="link"><i class="fa-duotone fa-drum"></i>
+                    <span>Percusión</span></a>
+                </li>
+                <li><a href="pedaleras.html" class="link"><i class="fa-regular fa-speaker"></i>
+                    <span>Pedaleras</span></a>
+                </li>
+                <li><a href="parlantes.html" class="link"><i class="fa-regular fa-volume-off"></i>
+                    <span>Parlantes</span></a>
+                </li>
+                <li><a href="microfonos.html" class="link"><i class="fa-solid fa-microphone-lines"></i>
+                    <span>Micrófonos</span></a>
+                </li>
+                <li><a href="saxofones.html" class="link"><i class="fa-duotone fa-saxophone"></i>
+                    <span>Saxofones</span></a>
+                </li>
+                <li><a href="djs.html" class="link"><i class="fa-regular fa-disc-drive"></i>
+                    <span>DJ's</span></a>
+                </li>
+                <li><a href="accesorios.html" class="link"><i class="fa-regular fa-tv-music"></i>
+                    <span>Accesorios</span></a>
+                </li>
+                <li><a href="violines.html" class="link"><i class="fa-duotone fa-violin"></i>
+                    <span>Violines</span></a>
+                </li>
+                <li><a href="teclados.html" class="link"><i class="fa-solid fa-piano-keyboard"></i>
+                    <span>Teclados</span></a>
+                </li>
+                </ul>
+            </nav>
+        </section>
+        <article id="elementos">
+           
+            <!-- Ukelele 1 -->
+            <div class="producto">
+                <!-- Imagen -->
+                    <div class="imagen">
+                        <img src="../../img/productos/ukeleles/1.Ukelele_kala_ukadelic_ka.webp" alt="Imagen Producto" width="600" height="400">
+                    </div>
+                <!-- Contenido -->
+                    <div class="desc">
+                        <div class="compartir-producto">
+                            <p>Compartir en: </p>
+                            <a href="https://www.facebook.com/search/top?q=doremi%20instrumental%20shop" target="_blank"><i class="bi bi-facebook fb-icon"></i></a>
+                            <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp whts-icon"></i></a> 
+                        </div>
+                <!-- Nombre  -->
+                        <div class="descripcion-producto">
+                            <p class="producto-nombre"><b>Ukelele Kala Ukadelic KA-SU</b></p>
+                            <p class="producto-desc">Marca: Ukadelic</p>
+                            <p class="producto-desc">Modelo: KA-SU Peace Love</p>
+                        </div>
+                <!-- Precio -->
+                        <div class="precio-producto">
+                            <p class="producto-nombre"><b>S/230.00</b></p>
+                            <div class="puntuacion">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                <!-- Cantidad -->
+                        <div class="cantidad-producto">
+                            <div class="cantidad">
+                                <label for="cantidad">Cantidad</label>
+                                <input type="number" name="cantidad" min="1" value="1">
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="bi bi-cart-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            <!-- Ukelele 2 -->
+            <div class="producto">
+                <!-- Imagen -->
+                    <div class="imagen">
+                        <img src="../../img/productos/ukeleles/2.Ukelele_Fender_01.webp" alt="Imagen Producto" width="600" height="400">
+                    </div>
+                <!-- Contenido -->
+                <!-- Redes Sociales -->
+                    <div class="desc">
+                        <div class="compartir-producto">
+                            <p>Compartir en: </p>
+                            <a href="https://www.facebook.com/profile.php?id=100087105315413" target="_blank"><i class="bi bi-facebook fb-icon"></i></a>
+                            <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp whts-icon"></i></a> 
+                        </div>
+                <!-- Nombre  -->
+                        <div class="descripcion-producto">
+                            <p class="producto-nombre"><b>Ukelele Fender Seaside Soprano</b></p>
+                            <p class="producto-desc">Marca: Fender</p>
+                            <p class="producto-desc">Modelo: Seaside Soprano Natural</p>
+                        </div>
+                <!-- Precio -->
+                        <div class="precio-producto">
+                            <p class="producto-nombre"><b>S/305.00</b></p>
+                            <div class="puntuacion">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                <!-- Cantidad -->
+                        <div class="cantidad-producto">
+                            <div class="cantidad">
+                                <label for="cantidad">Cantidad</label>
+                                <input type="number" name="cantidad" min="1" value="1">
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="bi bi-cart-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+            </div>  
+        </article>
+    </div>
+</main>
+    <!-- Footer -->
+<footer>
+  <div>
+    <ul class="lista-numeros">
+        <li>Atención al Cliente</li>
+        <li>+51 999 999 999</li>
+        <li>Compras por Teléfono</li>
+        <li>+51 999 999 888</li>
+        <li>Servicio Técnico</li>
+    <footer>
+        <div id="footerNumeros">
+          <ul class="lista-numeros">
+              <li>Atención al Cliente</li>
+              <li>+51 999 999 999</li>
+              <li>Compras por Teléfono</li>
+              <li>+51 999 999 888</li>
+              <li>Servicio Técnico</li>
+              <li>+51 999 999 777</li>
+          </ul>
+        </div>
+        <div id="footerLocalizacion">
+          <h4>¿Donde estámos ubicados?</h4>
+            <iframe class="footer-mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15847.670333703954!2d-79.84950453042983!3d-6.779884833906449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2f9b358d75%3A0x9b07b4e9c60e7223!2sPaseo%20de%20Las%20Musas!5e0!3m2!1ses!2spe!4v1661812376762!5m2!1ses!2spe"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div id="footerIntegrantes">
+          <h5>Integrantes del grupo:</h5>
+          <ul class="lista-integrantes">
+              <li>Sihomara Sandy Ochoa Cisneros</li>
+              <li>Condori Lima Mijayl Ramon</li>
+              <li>Llica García Jesusamado</li>
+              <li>Sandoval Litano Erick Arom</li>
+              <li>Villalta Delgado Victor Agustín</li>
+          </ul>
+        </div>
+        <div id="footerRedes">
+          <div class="footer-iconos">
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>  
+          </div>
+          <p>2022 - Todos los derechos Reservados</p>
+        </div>
+      </footer>

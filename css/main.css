@@ -15,8 +15,7 @@ body {
 /*Globales*/
 
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    
     margin: 50px auto; 
     min-height: calc(100vh - 250px); 
 }
@@ -42,6 +41,12 @@ h4{
 img{
     max-width: 100%;
 } 
+@media (min-width: 992px) { 
+    .contenedor{
+        max-width: 120rem;
+        width: 90%;
+    }
+}
 /* HEADER*/
 header {
     background-color: var(--color2);
@@ -109,7 +114,7 @@ header .enlace-carrito:hover{
     background-color: #111;
     transition: 0.4s;
 }
-.active {
+.nav-active {
     background-color: var(--color3);
 }
 /* FOOTER */
@@ -120,14 +125,16 @@ footer{
     color: var(--blanco);
     display: flex;
     gap: 5px;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px;
 }
 footer div ul{
+    font-size: 2rem;
     list-style-type: none;
     margin: auto;
     padding: 0;
 }
+
 footer div h5{
     text-transform: uppercase;
 }
@@ -141,12 +148,47 @@ footer div h5{
     text-decoration: none;
     color: var(--blanco);
 }
+.footer-iconos p{
+    text-align: center;
+}
+.lista-numeros{
+    font-size: medium;
+    font-weight: 600;
+}
 .lista-numeros li:nth-child(even){
     text-align: end;
+    font-weight: 300;
 }
 .lista-integrantes{
     list-style:inside;
+    font-size: medium;
 }
+.footer-mapa {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+#footerNumeros,#footerLocalizacion,#footerIntegrantes{
+    display: none;
+}
+#footerLocalizacion h4{
+    font-size: medium;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 9px;
+}
+@media (min-width: 992px) {
+    footer{
+        height: 350px;
+    }
+    #footerNumeros,#footerLocalizacion,#footerIntegrantes{
+        display:block;
+    }
+}
+
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
