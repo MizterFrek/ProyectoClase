@@ -50,9 +50,7 @@ img{
 }
 /* HEADER*/
 header {
-    /* background-color: var(--color2); */
-    background: rgb(57,85,99);
-    background: linear-gradient(86deg, rgba(57,85,99,1) 0%, rgba(125,161,177,1) 100%);
+    background-color: var(--color2);
     padding: 10px 50px;
     height: 80px;
     color: var(--blanco);
@@ -90,7 +88,7 @@ header div{
 }
 header a{
     font-size:48px;
-    color: var(--color5);
+    color: var(--color3);
 }
 header .enlace-carrito:hover{
     color: var(--color4);
