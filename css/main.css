@@ -7,6 +7,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    background-color: var(--color4);
     font-family: var(--fuente);
     font-size: 1.6rem;
     line-height: 1.5;
@@ -49,7 +50,9 @@ img{
 }
 /* HEADER*/
 header {
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
+    background: rgb(57,85,99);
+    background: linear-gradient(86deg, rgba(57,85,99,1) 0%, rgba(125,161,177,1) 100%);
     padding: 10px 50px;
     height: 80px;
     color: var(--blanco);
@@ -87,7 +90,7 @@ header div{
 }
 header a{
     font-size:48px;
-    color: var(--blanco);
+    color: var(--color5);
 }
 header .enlace-carrito:hover{
     color: var(--color4);
