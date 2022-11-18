@@ -132,13 +132,25 @@ const actualizarCarrito = () => {
         localStorage.setItem('carrito', JSON.stringify(carrito))
 
     })
-    
+
     //SEPTIMO PASO
     contadorCarrito.innerText = carrito.length // actualizamos con la longitud del carrito.
     //OCTAVO PASO
     console.log(carrito)
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+    var total = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
     //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador
     //empezando en 0.
+    // console.log(typeof carrito == 'undefined' || Object.entries(carrito).length)
+
+    if(Object.entries(carrito).length === 0)
+    {
+        botonComprar.classList.add("not-active");
+        precioTotal.innerHTML=`No hay Productos en el Carrito`
+    }
+    else
+    {
+        botonComprar.classList.remove("not-active");
+        precioTotal.innerHTML=`Precio total: S/. ${total}.00`
+    }
 
 }

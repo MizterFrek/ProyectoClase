@@ -4,6 +4,7 @@ const botonAbrir = document.getElementById('boton-carrito')
 const botonCerrar = document.getElementById('carritoCerrar')
 const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
 
+const botonComprar = document.getElementById('btn-Comprar')
 //Aqui se muestran los productos
 const contenedorProductos   = document.getElementById('contenedor-productos')
 
@@ -26,6 +27,7 @@ let carrito = []
 botonAbrir.addEventListener('click', ()=>{
     VistaCarrito.showModal();
 })
+
 botonCerrar.addEventListener('click', ()=>{
     VistaCarrito.close();
 })
@@ -34,10 +36,12 @@ contenedorModal.addEventListener('click', (event) =>{
     contenedorModal.classList.toggle('modal-active')
 
 })
+
 modalCarrito.addEventListener('click', (event) => {
     event.stopPropagation() //cuando clickeo sobre el modal se finaliza la propagacion del click a los elementos
     //padre
 })
+
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('carrito')){
         carrito = JSON.parse(localStorage.getItem('carrito'))
