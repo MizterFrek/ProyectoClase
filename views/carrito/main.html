@@ -39,8 +39,55 @@
 </nav>
     <!-- Contenido Principal -->
 <main class="contenedor">
-    <img class="error-web" src="../../img/webconstruccion.jpg" alt="imagenWebError">
+    <!-- <img class="error-web" src="../../img/webconstruccion.jpg" alt="imagenWebError"> -->
     
+    <form action="index.html">
+        <h2>Datos de contacto</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre">
+        
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" placeholder="Correo Electronico">
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" placeholder="Telefono de contacto">
+
+        <label for="direccion">Dirección</label>
+        <input type="text" name="direccion" placeholder="Dirección">
+        
+
+
+        <h2>Datos de Pago</h2>
+
+        <label for="tipoTarjeta">Tipo de Tarjeta</label>
+        <select name="tipoTarjeta" >
+            <option value="">--Seleccionar Tipo de Tarjeta--</option>
+            <option value="1">Visa</option>
+            <option value="2">MasterCard</option>
+            <option value="3">American Express</option>
+            <option value="4">Dinners Club</option>
+        </select>
+
+        <label for="tarjeta">Nombre de la Tarjeta</label>
+        <input type="text" name="tarjeta" placeholder="Nombre de la Tarjeta">
+        
+        <label for="Ntarjeta">Numero de la Tarjeta</label>
+        <input type="text" name="Ntarjeta" placeholder="Numero de la Tarjeta">
+        
+
+        <label for="serv">Fecha de Vencimiento</label>
+        <div class="radio-input cols-2">
+            <div><input type="text" placeholder="Mes"></div>
+            <div><input type="text" placeholder="Año"></div>
+        </div>
+
+        <label for="codseg">Codigo de Seguridad</label>
+        <input type="text" name="codseg" placeholder="Codigo de la Tarjeta">
+        
+        <input class="btn" type="submit" value="Registrar">
+
+    </form>
+
 </main>
 
     <!-- Footer -->

@@ -1,7 +1,7 @@
 @import url('root.css');
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px */ 
+    font-size: 62.5%; /* 1 rem = 10px */
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -16,9 +16,9 @@ body {
 /*Globales*/
 
 .contenedor{
-    
-    margin: 50px auto; 
-    min-height: calc(100vh - 250px); 
+
+    margin: 50px auto;
+    min-height: calc(100vh - 250px);
 }
 a{
     text-decoration: none;
@@ -41,8 +41,8 @@ h4{
 }
 img{
     max-width: 100%;
-} 
-@media (min-width: 992px) { 
+}
+@media (min-width: 992px) {
     .contenedor{
         max-width: 120rem;
         width: 90%;
@@ -67,7 +67,7 @@ header div{
     position: relative;
     width: 271px;
   }
-  
+
 .buscador input {
     box-sizing: border-box;
     color: #191919;
@@ -75,7 +75,7 @@ header div{
     width: 100%;
     border-radius: 10px;
 }
-    
+
 .buscador i {
     color: #191919;
     position: absolute;
@@ -92,6 +92,23 @@ header a{
 }
 header .enlace-carrito:hover{
     color: var(--color4);
+}
+.icono-carrito
+{
+    position: relative;
+}
+.icono-carrito span{
+    font-size: medium;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 /* BARRA DE NAVEGACION */
 .barra-navegacion ul {
@@ -195,4 +212,48 @@ footer div h5{
     width: 100%;
     height: auto;
   }
+}
+
+#Vista-Carrito{
+    border-radius: 25px;
+    padding: 30px 50px 15px 50px;
+    background-color: var(--color4);
+    opacity: 95%;
+    border: 5px solid var(--color2);;
+}
+#carritoCerrar{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color:var(--color5);
+}
+.titulo-modal
+{
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.productoEnCarrito
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productoEnCarrito div{
+    padding: 10px;
+}
+.productoEnCarrito img{
+    border-radius: 8px;
+}
+.precioProducto{
+    text-transform: uppercase;
+    color: var(--color5);
+    font-weight: 800;
+    text-align: center;
+    margin: 10px auto;
+}
+.botones-modal{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
 }

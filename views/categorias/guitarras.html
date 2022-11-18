@@ -25,7 +25,12 @@
         <input type="search" placeholder="Buscar">
         <i class="bi bi-search input-icon"></i>
     </div>
-    <a href="../carrito/main.html" class="enlace-carrito"><i class="bi bi-cart3"></i></a>
+    <a id="boton-carrito" class="enlace-carrito">
+        <span class="icono-carrito">
+            <span id="contadorCarrito">0</span>
+            <i class="bi bi-cart3"></i>
+        </span>
+    </a>
 </header>
     <!-- Barra de navegación -->
 <nav class="barra-navegacion">
@@ -84,188 +89,13 @@
                 </ul>
             </nav>
         </section>
-        <article id="elementos">
-            <!-- -------------------------------------------------------------- -->
-            <!-- --------------------------Guitarras ----------------------------->
-            <!-- -------------------------------------------------------------- -->
-            <!-- Guitarra 1 -->
-            <div class="producto">
-                <div class="imagen">
-                  <img src="../../img/productos/guitarras/G_acustica_taylor_gs_mini.webp" alt="Imagen Producto" width="600" height="400">
-                </div>
-                <div class="desc">
-                    <div class="compartir-producto">
-                        <p>Compartir en: </p>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fb-icon"></i></a>
-                        <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp whts-icon"></i></a>
-                        
-                    </div>
-                    <div class="descripcion-producto">
-                        <p class="producto-nombre"><b>Guitarra Acústica Taylor GS-Mini</b></p>
-                        <p class="producto-desc">Marca: Taylor</p>
-                        <p class="producto-desc">Modelo: GS-Mini</p>
-                    </div>
-                    <div class="precio-producto">
-                        <p class="producto-nombre"><b>S/265.00</b></p>
-                        <div class="puntuacion">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                    </div>
-                    <div class="cantidad-producto">
-                        <div class="cantidad">
-                            <label for="cantidad">Cantidad</label>
-                            <input type="number" name="cantidad" min="1" value="1">
-                        </div>
-                        <button class="btn-carrito">
-                            <i class="bi bi-cart-plus"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- Guitarra 2 -->
-            <!-- Cuerpo  -->
-            <div class="producto">
-            <!-- Imagen -->
-                <div class="imagen">
-                  <img src="../../img/productos/guitarras/G_acustica_yamaha_c40m.webp" alt="Imagen Producto" width="600" height="400">
-                </div>
-            <!-- Contenido -->
-                <div class="desc">
-                    <div class="compartir-producto">
-                        <p>Compartir en: </p>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fb-icon"></i></a>
-                        <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp whts-icon"></i></a> 
-                    </div>
-            <!-- Nombre  -->
-                    <div class="descripcion-producto">
-                        <p class="producto-nombre"><b>Guitarra Acústica Yamaha C-40M</b></p>
-                        <p class="producto-desc">Marca: Yamaha</p>
-                        <p class="producto-desc">Modelo: C-40M</p>
-                    </div>
-            <!-- Precio -->
-                    <div class="precio-producto">
-                        <p class="producto-nombre"><b>S/450.00</b></p>
-                        <div class="puntuacion">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                    </div>
-            <!-- Cantidad -->
-                    <div class="cantidad-producto">
-                        <div class="cantidad">
-                            <label for="cantidad">Cantidad</label>
-                            <input type="number" name="cantidad" min="1" value="1">
-                        </div>
-                        <button class="btn-carrito">
-                            <i class="bi bi-cart-plus"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-<!-- -------------------------------------------------------------- -->
-                        <!-- FORMATO DE EJEMPLO-->
-<!-- -------------------------------------------------------------- -->
-            <!-- Guitarra 3 -->
-            <div class="producto">
-            <!-- Imagen -->
-                <div class="imagen">
-                    <img src="../../img/productos/guitarras/G_electrica_Squier_Strat_MM_Strocaster.webp" alt="Imagen Producto" width="600" height="400">
-                </div>
-            <!-- Contenido -->
-                <div class="desc">
-                    <div class="compartir-producto">
-                        <p>Compartir en: </p>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fb-icon"></i></a>
-                        <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp whts-icon"></i></a> 
-                    </div>
-            <!-- Nombre  -->
-                    <div class="descripcion-producto">
-                        <p class="producto-nombre"><b>Guitarra Eléctrica Squier Stratocaster</b></p>
-                        <p class="producto-desc">Marca: Squier</p>
-                        <p class="producto-desc">Modelo: Stratocaster MM</p>
-                    </div>
-            <!-- Precio -->
-                    <div class="precio-producto">
-                        <p class="producto-nombre"><b>S/540.00</b></p>
-                        <div class="puntuacion">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                    </div>
-            <!-- Cantidad -->
-                    <div class="cantidad-producto">
-                        <div class="cantidad">
-                            <label for="cantidad">Cantidad</label>
-                            <input type="number" name="cantidad" min="1" value="1">
-                        </div>
-                        <button class="btn-carrito">
-                            <i class="bi bi-cart-plus"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- Guitarra4 -->
-            <div class="producto">
-            <!-- Imagen -->
-                <div class="imagen">
-                    <img src="../../img/productos/guitarras/G_electrica_yamaha_jackson.webp" alt="Imagen Producto" width="600" height="400">
-                </div>
-            <!-- Contenido -->
-                <div class="desc">
-                    <div class="compartir-producto">
-                        <p>Compartir en: </p>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fb-icon"></i></a>
-                        <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp whts-icon"></i></a> 
-                    </div>
-            <!-- Nombre  -->
-                    <div class="descripcion-producto">
-                        <p class="producto-nombre"><b>Guitarra Eléctrica Jackson King V J32</b></p>
-                        <p class="producto-desc">Marca: Jackson</p>
-                        <p class="producto-desc">Modelo: Series King V J32</p>
-                    </div>
-            <!-- Precio -->
-                    <div class="precio-producto">
-                        <p class="producto-nombre"><b>S/1899.00</b></p>
-                        <div class="puntuacion">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                    </div>
-            <!-- Cantidad -->
-                    <div class="cantidad-producto">
-                        <div class="cantidad">
-                            <label for="cantidad">Cantidad</label>
-                            <input type="number" name="cantidad" min="1" value="1">
-                        </div>
-                        <button class="btn-carrito">
-                            <i class="bi bi-cart-plus"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
- <!-- ----------------------------------------------------------------------- -->
- <!-------------------------------------- FIN ---------------------------------->
- <!-- ----------------------------------------------------------------------- -->
+
+        <article id="contenedor-productos">
+
         </article>
     </div>
 </main>
+
     <!-- Footer -->
     <footer>
         <div id="footerNumeros">
@@ -304,6 +134,30 @@
           </div>
           <p>2022 - Todos los derechos Reservados</p>
         </div>
-      </footer>
+    </footer>
+    
+    <dialog id="Vista-Carrito">
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h4 class="titulo-modal">Carrito de compras</h4>
+                <a id="carritoCerrar"><i class="fas fa-times-circle"></i></a>
+                <div id="carrito-contenedor">
+
+                    
+                
+                </div>
+                </div>
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <div class="botones-modal">
+                <a id="vaciar-carrito" class="btn-carrito">Vaciar carrito</a>
+                <a href="../carrito/main.html" class="btn-carrito">Realizar compra</a>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="../../js/stock.js"></script>
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/app.js"></script>
 </body>
 </html>

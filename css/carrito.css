@@ -3,3 +3,66 @@
     justify-content: center;
     margin: auto;
 }
+form{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background-color: #002844;
+    color: white;
+    border-radius: 2ch;
+    padding: 30px;
+}
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+input:focus {
+    background-color: rgb(153, 204, 242);
+    border: none;
+    }
+input,select{
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    transition: width 0.4s ease-in-out;
+    border-radius: 5px;
+}
+.radio-input{
+    margin: 5px;
+    padding: 10px 20px;
+}
+.radio-input div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cols-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cols-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btn{
+    padding: 8px 16px;
+    font-size: small;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+    color: #006199;
+    border: 2px solid #006199;
+    transition-duration: 0.4s;
+    margin-top: 25px;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
+}
