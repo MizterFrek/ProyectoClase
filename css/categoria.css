@@ -30,7 +30,7 @@
 .link:hover{
     color: var(--color4);
 }
-#elementos{
+#elementos, #contenedor-productos{
     width: calc(100% - 250px);
 }
 

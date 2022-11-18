@@ -32,7 +32,7 @@
 <nav class="barra-navegacion">
     <ul>
         <li><a href="../../index.html">Inicio</a></li>
-        <li><a href="../categorias/main.html">Categorías</a></li>
+        <li><a href="../categorias/guitarras.html">Categorías</a></li>
         <li><a href="../servicios/main.html">Servicios</a></li>
         <li><a href="../contacto/main.html">Contáctanos</a></li>
     </ul> 
@@ -44,16 +44,16 @@
     <form action="index.html">
         <h2>Datos de contacto</h2>
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Nombre">
+        <input required type="text" name="nombre" placeholder="Nombre">
         
         <label for="correo">Correo</label>
-        <input type="email" name="correo" placeholder="Correo Electronico">
+        <input required type="email" name="correo" placeholder="Correo Electronico">
 
         <label for="telefono">Telefono</label>
-        <input type="tel" name="telefono" placeholder="Telefono de contacto">
+        <input required type="tel" name="telefono" placeholder="Telefono de contacto">
 
         <label for="direccion">Dirección</label>
-        <input type="text" name="direccion" placeholder="Dirección">
+        <input required type="text" name="direccion" placeholder="Dirección">
         
 
 
@@ -69,22 +69,22 @@
         </select>
 
         <label for="tarjeta">Nombre de la Tarjeta</label>
-        <input type="text" name="tarjeta" placeholder="Nombre de la Tarjeta">
+        <input required type="text" name="tarjeta" placeholder="Nombre de la Tarjeta">
         
         <label for="Ntarjeta">Numero de la Tarjeta</label>
-        <input type="text" name="Ntarjeta" placeholder="Numero de la Tarjeta">
+        <input required type="text" name="Ntarjeta" placeholder="Numero de la Tarjeta">
         
 
         <label for="serv">Fecha de Vencimiento</label>
         <div class="radio-input cols-2">
-            <div><input type="text" placeholder="Mes"></div>
-            <div><input type="text" placeholder="Año"></div>
+            <div><input required type="text" placeholder="Mes"></div>
+            <div><input required type="text" placeholder="Año"></div>
         </div>
 
         <label for="codseg">Codigo de Seguridad</label>
-        <input type="text" name="codseg" placeholder="Codigo de la Tarjeta">
+        <input required type="text" name="codseg" placeholder="Codigo de la Tarjeta">
         
-        <input class="btn" type="submit" value="Registrar">
+        <input required class="btn" type="submit" value="Registrar">
 
     </form>
 
